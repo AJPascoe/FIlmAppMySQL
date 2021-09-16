@@ -1,4 +1,5 @@
 const command = process.argv[2];
+const { addFilm } = require("./film/film.methods")
 
 const app = async () => {
   switch (command) {
@@ -8,10 +9,10 @@ const app = async () => {
         actor: process.argv[4],
         like: process.argv[5],
       };
-      // pass filmObj to addFilm function
+      addFilm(filmObj); // filmObj is passed into the addFilm function
     // case "list":
         // find all fims form MySQL DB
   }
 }
 
-app();
+app(); 

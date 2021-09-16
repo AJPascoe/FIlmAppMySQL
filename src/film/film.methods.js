@@ -9,3 +9,11 @@ exports.addFilm = async (filmObj) => {
     }
 };
 
+exports.listFilm = async () => {
+    try {
+        const list = await Film.findAll();
+        console.log(list[0].dataValues)
+    } catch (error) {
+        console.log(error);
+    }
+}

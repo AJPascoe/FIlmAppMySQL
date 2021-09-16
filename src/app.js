@@ -1,0 +1,17 @@
+const command = process.argv[2];
+
+const app = async () => {
+  switch (command) {
+    case "add":
+      const filmObj = {
+        name: process.argv[3],
+        actor: process.argv[4],
+        like: process.argv[5],
+      };
+      // pass filmObj to addFilm function
+    // case "list":
+        // find all fims form MySQL DB
+  }
+}
+
+app();
